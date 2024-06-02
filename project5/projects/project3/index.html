@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnicalDocument</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul><header>Documentación de Python</header>
+            <li><a class="nav-link" href="#Introducción">Introducción</a></li>
+            <li><a class="nav-link" href="#Lo_que_debes_saber">Lo que debes saber</a></li>
+            <li><a class="nav-link" href="#Python_y_Java">Python y Java</a></li>
+            <li><a class="nav-link" href="#Hola_mundo">Hola mundo</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Declarar_variables">Declarar variables</a></li>
+            <li><a class="nav-link" href="#If_else">If...else</a></li>
+            <li><a class="nav-link" href="#While">While</a></li>
+            <li><a class="nav-link" href="#Constantes">Constantes</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introducción">
+            <header>Introducción</header>
+            <p>Python es un lenguaje de programación multiplataforma y orientado a objetos. Es un lenguaje pequeño y ligero. Dentro de un entorno de alojamiento (por ejemplo, un navegador web), Python puede conectarse a los objetos de su entorno para proporcionar control programático sobre ellos.</p>
+            <p>Python contiene una biblioteca estándar de objetos, como listas, fechas y operaciones matemáticas, y un conjunto básico de elementos de lenguaje, como operadores, estructuras de control y declaraciones. Python puede extenderse para una variedad de propósitos al complementarlo con objetos adicionales; por ejemplo:</p>
+            <ul>
+                <li>Python del lado del cliente extiende el lenguaje básico al suministrar objetos para controlar un navegador y su Modelo de Objeto de Documento (DOM). Por ejemplo, las extensiones del lado del cliente permiten a una aplicación colocar elementos en un formulario HTML y responder a eventos del usuario como clics de ratón, entrada de formulario y navegación de página.</li>
+                <li>Python del lado del servidor extiende el lenguaje básico al suministrar objetos relevantes para ejecutar Python en un servidor. Por ejemplo, las extensiones del lado del servidor permiten a una aplicación comunicarse con una base de datos, proporcionar continuidad de información de una invocación a otra de la aplicación o realizar manipulaciones de archivos en un servidor.</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="Lo_que_debes_saber">
+            <header>Lo que debes saber</header>
+            <p>Esta guía asume que tienes los siguientes conocimientos básicos:</p>
+            <ul>
+                <li>Un entendimiento general de Internet y la World Wide Web (WWW).
+                </li>
+                <li>Un buen conocimiento de trabajo de HyperText Markup Language (HTML).
+                </li>
+                <li>Alguna experiencia en programación.
+                </li>
+        </section>
+        
+        <section class="main-section" id="Python_y_Java">
+            <header>Python y Java</header>
+            <p>Python y Java son similares en algunos aspectos pero fundamentalmente diferentes en otros. El lenguaje Python se asemeja a Java pero no tiene la tipificación estática ni la comprobación de tipos fuertes de Java. Python sigue la sintaxis de la mayoría de las expresiones de Java, convenciones de nombres y estructuras de control básicas, lo que fue la razón por la cual se renombró de LiveScript a Python.</p>
+            <p>A diferencia del sistema de clases de tiempo de compilación de Java construido por declaraciones, Python admite un sistema en tiempo de ejecución basado en un pequeño número de tipos de datos que representan valores numéricos, booleanos y de cadena. Python tiene un modelo de objeto basado en prototipos en lugar del modelo de objeto basado en clases más común. El modelo basado en prototipos proporciona herencia dinámica; es decir, lo que se hereda puede variar para objetos individuales. Python también admite funciones sin ningún requisito declarativo especial. Las funciones pueden ser propiedades de objetos, ejecutándose como métodos de tipo libre.</p>
+            <p>Python es un lenguaje muy libre en comparación con Java. No tienes que declarar todas las variables, clases y métodos. No tienes que preocuparte si los métodos son públicos, privados o protegidos, y no tienes que implementar interfaces. Las variables, los parámetros y los tipos de retorno de función no están explícitamente tipados.</p>
+        </section>
+        
+        <section class="main-section" id="Hola_mundo">
+            <header>Hola mundo</header>
+            <p>Para comenzar a escribir Python, abre el Bloc de notas y escribe tu primer código Python de "Hola mundo":</p>
+            <code>print("Hola Mundo")</code>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Usas variables como nombres simbólicos para valores en tu aplicación. Los nombres de las variables, llamados identificadores, cumplen ciertas reglas.
+
+            </p>
+            <p>Un identificador Python debe comenzar con una letra, guión bajo (_) o signo de dólar ($); los caracteres siguientes también pueden ser dígitos (0-9). Como Python distingue entre mayúsculas y minúsculas, las letras incluyen los caracteres "A" a "Z" (mayúsculas) y los caracteres "a" a "z" (minúsculas).</p>
+            <p>Puedes usar letras ISO 8859-1 o Unicode como å y ü en identificadores. También puedes usar secuencias de escape Unicode como caracteres en identificadores. Algunos ejemplos de nombres legales son golpes_de_número, temp99 y _nombre.</p>
+        </section>
+        
+        <section class="main-section" id="Declarar_variables">
+            <header>Declarar variables</header>
+            <p>Simplemente se le asigna un valor. Por ejemplo:</p>
+            <code>v1=42</code>
+            <p>También puedes especificar el tipo de valor, aquí un ejemplo de una variable de tipo string:</p>
+            <code>v2=str("variable 2")</code>
+        </section>
+        
+        <section class="main-section" id="If_else">
+            <header>If else</header>
+            <p>En Python, el uso del enunciado if permite ejecutar una instrucción si una condición lógica es verdadera. Además, se puede utilizar la cláusula else de manera opcional para ejecutar una instrucción si la condición es falsa. La estructura básica de un enunciado if es la siguiente:</p>
+            <code>if condicion:
+                instruccion_1
+            else:
+                instruccion_2
+            </code>
+            <p>La condición puede ser cualquier expresión que se evalúe como verdadera o falsa. Si la condición es verdadera, se ejecuta la instrucción_1; de lo contrario, se ejecuta la instrucción_2. Tanto la instrucción_1 como la instrucción_2 pueden ser cualquier instrucción, incluyendo enunciados if anidados.</p>
+            <p>También es posible combinar las instrucciones utilizando elif para tener múltiples condiciones evaluadas en secuencia, de la siguiente manera:
+
+            </p>
+            <code>if condicion_1:
+                instruccion_1
+            elif condicion_2:
+                instruccion_2
+            elif condicion_n:
+                instruccion_n
+            else:
+                instruccion_ultima
+            </code>
+        </section>
+
+        <section class="main-section" id="While">
+            <header>While</header>
+            <p>El enunciado while en Python ejecuta sus instrucciones mientras una condición especificada se evalúe como verdadera. La estructura básica de un enunciado while es la siguiente:</p>
+            <code>while condicion:
+                instruccion
+            </code>
+        </section>
+
+        <section class="main-section" id="Constantes">
+            <header>Constantes</header>
+            <p>Python permite la creación de constantes con "const", con una sintaxis similar a la de las variables.</p>
+        </section>
+        
+        
+        
+        <p>Estas son solo algunas de las características básicas de Python, que lo hacen un lenguaje poderoso y flexible para diferentes aplicaciones.</p>
+        
+    </main>
+    
+</body>
+</html>
