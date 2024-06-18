@@ -93,8 +93,8 @@ a{
 }
 .project-tile{
     background-color: #333333;
-    height: 375px;
-    width: 500px;
+    height: 41.3vh;
+    width: 55vh;
     margin: 20px;
 }
 
@@ -107,7 +107,7 @@ a{
 }
 
 .project-tile img{
-    max-width: 500px;
+    width: 55vh;
 }
 #profile-links{
     display: flex;
